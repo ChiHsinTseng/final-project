@@ -30,7 +30,7 @@ driver.find_element_by_xpath("//div[5]/div/div/div[3]").click()
 driver.find_element_by_xpath("//div[6]/div/div/div[3]").click()
 
 #要下滑
-pyautogui.scroll(-10)
+pyautogui.scroll(-10, x = 250, y = 500)
 
 #關掉不用的選單（宜花東、離島、台灣之外）
 #driver.find_element_by_xpath("//div[8]/div/div/div[3]").click()
