@@ -32,9 +32,67 @@ for items in range(167):
     print(s1[0].text)
     s = s1[1].text.split("\n")
     a = list(filter(None, s))
-    for i in a:
-        i > a[0] and i < a[2]
-        print(i)
+    
+    store_char = []
+    for i in range(len(a)):
+        if "▎特色：" == a[i]:
+            start = i
+        if "▎營業時間：" == a[i]:
+            end = i
+    l = int(end - start)-1
+    for k in range(l):
+        store_char.append(a[start+k+1])
+    ans = "".join(store_char)
+    print(ans)
+    
+    store_time = []
+    for i in range(len(a)):
+        if "▎營業時間：" == a[i]:
+            start = i
+        if "▎鄰近地標或大眾運輸：" == a[i]:
+            end = i
+    l = int(end - start)-1
+    for k in range(l):
+        store_time.append(a[start+k+1])
+    ans = "".join(store_time)
+    print(ans)
+    
+    store_tran = []
+    for i in range(len(a)):
+        if "▎鄰近地標或大眾運輸：" == a[i]:
+            start = i
+        if "▎社團內參考食記：" == a[i]:
+            end = i
+    l = int(end - start)-1
+    for k in range(l):
+        store_tran.append(a[start+k+1])
+    ans = "".join(store_tran)
+    print(ans)
+    
+    store_refs = []
+    for i in range(len(a)):
+        if "▎社團內參考食記：" == a[i]:
+            start = i
+        if "▎標籤：" == a[i]:
+            end = i
+    l = int(end - start)-1
+    for k in range(l):
+        store_refs.append(a[start+k+1])
+    ans = "".join(store_refs)
+    print(ans)
+    
+    store_tags = []
+    for i in range(len(a)):
+        if "▎標籤：" == a[i]:
+            start = i
+        if a[-1] == a[i]:
+            end = i
+    l = int(end - start)
+    for k in range(l):
+        store_tags.append(a[start+k+1])
+    ans = "".join(store_tags)
+    print(ans)
+    
     store_name.append(s1[0].text)
     time.sleep(0.5)
     driver.find_element_by_xpath("//div[3]/div/div/span/span/span").click()
@@ -54,9 +112,65 @@ for items in range(47):
     print(s1[0].text)
     s = s1[1].text.split("\n")
     a = list(filter(None, s))
-    for i in a:
-        i > a[0] and i < a[2]
-        print(i)
+    store_char = []
+    for i in range(len(a)):
+        if "▎特色：" == a[i]:
+            start = i
+        if "▎營業時間：" == a[i]:
+            end = i
+    l = int(end - start)-1
+    for k in range(l):
+        store_char.append(a[start+k+1])
+    ans = "".join(store_char)
+    print(ans)
+    
+    store_time = []
+    for i in range(len(a)):
+        if "▎營業時間：" == a[i]:
+            start = i
+        if "▎鄰近地標或大眾運輸：" == a[i]:
+            end = i
+    l = int(end - start)-1
+    for k in range(l):
+        store_time.append(a[start+k+1])
+    ans = "".join(store_time)
+    print(ans)
+    
+    store_tran = []
+    for i in range(len(a)):
+        if "▎鄰近地標或大眾運輸：" == a[i]:
+            start = i
+        if "▎社團內參考食記：" == a[i]:
+            end = i
+    l = int(end - start)-1
+    for k in range(l):
+        store_tran.append(a[start+k+1])
+    ans = "".join(store_tran)
+    print(ans)
+    
+    store_refs = []
+    for i in range(len(a)):
+        if "▎社團內參考食記：" == a[i]:
+            start = i
+        if "▎標籤：" == a[i]:
+            end = i
+    l = int(end - start)-1
+    for k in range(l):
+        store_refs.append(a[start+k+1])
+    ans = "".join(store_refs)
+    print(ans)
+    
+    store_tags = []
+    for i in range(len(a)):
+        if "▎標籤：" == a[i]:
+            start = i
+        if a[-1] == a[i]:
+            end = i
+    l = int(end - start)
+    for k in range(l):
+        store_tags.append(a[start+k+1])
+    ans = "".join(store_tags)
+    print(ans)
     store_name.append(s1[0].text)
     time.sleep(0.5)
     driver.find_element_by_xpath("//div[3]/div/div/span/span/span").click()
@@ -76,9 +190,65 @@ for items in range(59):
     print(s1[0].text)
     s = s1[1].text.split("\n")
     a = list(filter(None, s))
-    for i in a:
-        i > a[0] and i < a[2]
-        print(i)
+    store_char = []
+    for i in range(len(a)):
+        if "▎特色：" == a[i]:
+            start = i
+        if "▎營業時間：" == a[i]:
+            end = i
+    l = int(end - start)-1
+    for k in range(l):
+        store_char.append(a[start+k+1])
+    ans = "".join(store_char)
+    print(ans)
+    
+    store_time = []
+    for i in range(len(a)):
+        if "▎營業時間：" == a[i]:
+            start = i
+        if "▎鄰近地標或大眾運輸：" == a[i]:
+            end = i
+    l = int(end - start)-1
+    for k in range(l):
+        store_time.append(a[start+k+1])
+    ans = "".join(store_time)
+    print(ans)
+    
+    store_tran = []
+    for i in range(len(a)):
+        if "▎鄰近地標或大眾運輸：" == a[i]:
+            start = i
+        if "▎社團內參考食記：" == a[i]:
+            end = i
+    l = int(end - start)-1
+    for k in range(l):
+        store_tran.append(a[start+k+1])
+    ans = "".join(store_tran)
+    print(ans)
+    
+    store_refs = []
+    for i in range(len(a)):
+        if "▎社團內參考食記：" == a[i]:
+            start = i
+        if "▎標籤：" == a[i]:
+            end = i
+    l = int(end - start)-1
+    for k in range(l):
+        store_refs.append(a[start+k+1])
+    ans = "".join(store_refs)
+    print(ans)
+    
+    store_tags = []
+    for i in range(len(a)):
+        if "▎標籤：" == a[i]:
+            start = i
+        if a[-1] == a[i]:
+            end = i
+    l = int(end - start)
+    for k in range(l):
+        store_tags.append(a[start+k+1])
+    ans = "".join(store_tags)
+    print(ans)
     store_name.append(s1[0].text)
     time.sleep(0.5)
     driver.find_element_by_xpath("//div[3]/div/div/span/span/span").click()
@@ -99,9 +269,65 @@ for items in range(68):
     print(s1[0].text)
     s = s1[1].text.split("\n")
     a = list(filter(None, s))
-    for i in a:
-        i > a[0] and i < a[2]
-        print(i)
+    store_char = []
+    for i in range(len(a)):
+        if "▎特色：" == a[i]:
+            start = i
+        if "▎營業時間：" == a[i]:
+            end = i
+    l = int(end - start)-1
+    for k in range(l):
+        store_char.append(a[start+k+1])
+    ans = "".join(store_char)
+    print(ans)
+    
+    store_time = []
+    for i in range(len(a)):
+        if "▎營業時間：" == a[i]:
+            start = i
+        if "▎鄰近地標或大眾運輸：" == a[i]:
+            end = i
+    l = int(end - start)-1
+    for k in range(l):
+        store_time.append(a[start+k+1])
+    ans = "".join(store_time)
+    print(ans)
+    
+    store_tran = []
+    for i in range(len(a)):
+        if "▎鄰近地標或大眾運輸：" == a[i]:
+            start = i
+        if "▎社團內參考食記：" == a[i]:
+            end = i
+    l = int(end - start)-1
+    for k in range(l):
+        store_tran.append(a[start+k+1])
+    ans = "".join(store_tran)
+    print(ans)
+    
+    store_refs = []
+    for i in range(len(a)):
+        if "▎社團內參考食記：" == a[i]:
+            start = i
+        if "▎標籤：" == a[i]:
+            end = i
+    l = int(end - start)-1
+    for k in range(l):
+        store_refs.append(a[start+k+1])
+    ans = "".join(store_refs)
+    print(ans)
+    
+    store_tags = []
+    for i in range(len(a)):
+        if "▎標籤：" == a[i]:
+            start = i
+        if a[-1] == a[i]:
+            end = i
+    l = int(end - start)
+    for k in range(l):
+        store_tags.append(a[start+k+1])
+    ans = "".join(store_tags)
+    print(ans)
     store_name.append(s1[0].text)
     time.sleep(0.5)
     driver.find_element_by_xpath("//div[3]/div/div/span/span/span").click()
@@ -122,9 +348,65 @@ for items in range(37):
     print(s1[0].text)
     s = s1[1].text.split("\n")
     a = list(filter(None, s))
-    for i in a:
-        i > a[0] and i < a[2]
-        print(i)
+    store_char = []
+    for i in range(len(a)):
+        if "▎特色：" == a[i]:
+            start = i
+        if "▎營業時間：" == a[i]:
+            end = i
+    l = int(end - start)-1
+    for k in range(l):
+        store_char.append(a[start+k+1])
+    ans = "".join(store_char)
+    print(ans)
+    
+    store_time = []
+    for i in range(len(a)):
+        if "▎營業時間：" == a[i]:
+            start = i
+        if "▎鄰近地標或大眾運輸：" == a[i]:
+            end = i
+    l = int(end - start)-1
+    for k in range(l):
+        store_time.append(a[start+k+1])
+    ans = "".join(store_time)
+    print(ans)
+    
+    store_tran = []
+    for i in range(len(a)):
+        if "▎鄰近地標或大眾運輸：" == a[i]:
+            start = i
+        if "▎社團內參考食記：" == a[i]:
+            end = i
+    l = int(end - start)-1
+    for k in range(l):
+        store_tran.append(a[start+k+1])
+    ans = "".join(store_tran)
+    print(ans)
+    
+    store_refs = []
+    for i in range(len(a)):
+        if "▎社團內參考食記：" == a[i]:
+            start = i
+        if "▎標籤：" == a[i]:
+            end = i
+    l = int(end - start)-1
+    for k in range(l):
+        store_refs.append(a[start+k+1])
+    ans = "".join(store_refs)
+    print(ans)
+    
+    store_tags = []
+    for i in range(len(a)):
+        if "▎標籤：" == a[i]:
+            start = i
+        if a[-1] == a[i]:
+            end = i
+    l = int(end - start)
+    for k in range(l):
+        store_tags.append(a[start+k+1])
+    ans = "".join(store_tags)
+    print(ans)
     store_name.append(s1[0].text)
     time.sleep(0.5)
     driver.find_element_by_xpath("//div[3]/div/div/span/span/span").click()
@@ -145,9 +427,65 @@ for items in range(50):
     print(s1[0].text)
     s = s1[1].text.split("\n")
     a = list(filter(None, s))
-    for i in a:
-        i > a[0] and i < a[2]
-        print(i)
+    store_char = []
+    for i in range(len(a)):
+        if "▎特色：" == a[i]:
+            start = i
+        if "▎營業時間：" == a[i]:
+            end = i
+    l = int(end - start)-1
+    for k in range(l):
+        store_char.append(a[start+k+1])
+    ans = "".join(store_char)
+    print(ans)
+    
+    store_time = []
+    for i in range(len(a)):
+        if "▎營業時間：" == a[i]:
+            start = i
+        if "▎鄰近地標或大眾運輸：" == a[i]:
+            end = i
+    l = int(end - start)-1
+    for k in range(l):
+        store_time.append(a[start+k+1])
+    ans = "".join(store_time)
+    print(ans)
+    
+    store_tran = []
+    for i in range(len(a)):
+        if "▎鄰近地標或大眾運輸：" == a[i]:
+            start = i
+        if "▎社團內參考食記：" == a[i]:
+            end = i
+    l = int(end - start)-1
+    for k in range(l):
+        store_tran.append(a[start+k+1])
+    ans = "".join(store_tran)
+    print(ans)
+    
+    store_refs = []
+    for i in range(len(a)):
+        if "▎社團內參考食記：" == a[i]:
+            start = i
+        if "▎標籤：" == a[i]:
+            end = i
+    l = int(end - start)-1
+    for k in range(l):
+        store_refs.append(a[start+k+1])
+    ans = "".join(store_refs)
+    print(ans)
+    
+    store_tags = []
+    for i in range(len(a)):
+        if "▎標籤：" == a[i]:
+            start = i
+        if a[-1] == a[i]:
+            end = i
+    l = int(end - start)
+    for k in range(l):
+        store_tags.append(a[start+k+1])
+    ans = "".join(store_tags)
+    print(ans)
     store_name.append(s1[0].text)
     time.sleep(0.5)
     driver.find_element_by_xpath("//div[3]/div/div/span/span/span").click()
@@ -168,9 +506,65 @@ for items in range(12):
     print(s1[0].text)
     s = s1[1].text.split("\n")
     a = list(filter(None, s))
-    for i in a:
-        i > a[0] and i < a[2]
-        print(i)
+    store_char = []
+    for i in range(len(a)):
+        if "▎特色：" == a[i]:
+            start = i
+        if "▎營業時間：" == a[i]:
+            end = i
+    l = int(end - start)-1
+    for k in range(l):
+        store_char.append(a[start+k+1])
+    ans = "".join(store_char)
+    print(ans)
+    
+    store_time = []
+    for i in range(len(a)):
+        if "▎營業時間：" == a[i]:
+            start = i
+        if "▎鄰近地標或大眾運輸：" == a[i]:
+            end = i
+    l = int(end - start)-1
+    for k in range(l):
+        store_time.append(a[start+k+1])
+    ans = "".join(store_time)
+    print(ans)
+    
+    store_tran = []
+    for i in range(len(a)):
+        if "▎鄰近地標或大眾運輸：" == a[i]:
+            start = i
+        if "▎社團內參考食記：" == a[i]:
+            end = i
+    l = int(end - start)-1
+    for k in range(l):
+        store_tran.append(a[start+k+1])
+    ans = "".join(store_tran)
+    print(ans)
+    
+    store_refs = []
+    for i in range(len(a)):
+        if "▎社團內參考食記：" == a[i]:
+            start = i
+        if "▎標籤：" == a[i]:
+            end = i
+    l = int(end - start)-1
+    for k in range(l):
+        store_refs.append(a[start+k+1])
+    ans = "".join(store_refs)
+    print(ans)
+    
+    store_tags = []
+    for i in range(len(a)):
+        if "▎標籤：" == a[i]:
+            start = i
+        if a[-1] == a[i]:
+            end = i
+    l = int(end - start)
+    for k in range(l):
+        store_tags.append(a[start+k+1])
+    ans = "".join(store_tags)
+    print(ans)
     store_name.append(s1[0].text)
     time.sleep(0.5)
     driver.find_element_by_xpath("//div[3]/div/div/span/span/span").click()
@@ -185,9 +579,65 @@ s1 = WebDriverWait(driver, 15).until(EC.presence_of_all_elements_located((By.XPA
 print(s1[0].text)
 s = s1[1].text.split("\n")
 a = list(filter(None, s))
-for i in a:
-        i > a[0] and i < a[2]
-        print(i)
+store_char = []
+    for i in range(len(a)):
+        if "▎特色：" == a[i]:
+            start = i
+        if "▎營業時間：" == a[i]:
+            end = i
+    l = int(end - start)-1
+    for k in range(l):
+        store_char.append(a[start+k+1])
+    ans = "".join(store_char)
+    print(ans)
+    
+    store_time = []
+    for i in range(len(a)):
+        if "▎營業時間：" == a[i]:
+            start = i
+        if "▎鄰近地標或大眾運輸：" == a[i]:
+            end = i
+    l = int(end - start)-1
+    for k in range(l):
+        store_time.append(a[start+k+1])
+    ans = "".join(store_time)
+    print(ans)
+    
+    store_tran = []
+    for i in range(len(a)):
+        if "▎鄰近地標或大眾運輸：" == a[i]:
+            start = i
+        if "▎社團內參考食記：" == a[i]:
+            end = i
+    l = int(end - start)-1
+    for k in range(l):
+        store_tran.append(a[start+k+1])
+    ans = "".join(store_tran)
+    print(ans)
+    
+    store_refs = []
+    for i in range(len(a)):
+        if "▎社團內參考食記：" == a[i]:
+            start = i
+        if "▎標籤：" == a[i]:
+            end = i
+    l = int(end - start)-1
+    for k in range(l):
+        store_refs.append(a[start+k+1])
+    ans = "".join(store_refs)
+    print(ans)
+    
+    store_tags = []
+    for i in range(len(a)):
+        if "▎標籤：" == a[i]:
+            start = i
+        if a[-1] == a[i]:
+            end = i
+    l = int(end - start)
+    for k in range(l):
+        store_tags.append(a[start+k+1])
+    ans = "".join(store_tags)
+    print(ans)
 store_name.append(s1[0].text)
 time.sleep(0.5)
 driver.find_element_by_xpath("//div[3]/div/div/span/span/span").click()
@@ -199,9 +649,65 @@ s1 = WebDriverWait(driver, 15).until(EC.presence_of_all_elements_located((By.XPA
 print(s1[0].text)
 s = s1[1].text.split("\n")
 a = list(filter(None, s))
-for i in a:
-        i > a[0] and i < a[2]
-        print(i)
+store_char = []
+    for i in range(len(a)):
+        if "▎特色：" == a[i]:
+            start = i
+        if "▎營業時間：" == a[i]:
+            end = i
+    l = int(end - start)-1
+    for k in range(l):
+        store_char.append(a[start+k+1])
+    ans = "".join(store_char)
+    print(ans)
+    
+    store_time = []
+    for i in range(len(a)):
+        if "▎營業時間：" == a[i]:
+            start = i
+        if "▎鄰近地標或大眾運輸：" == a[i]:
+            end = i
+    l = int(end - start)-1
+    for k in range(l):
+        store_time.append(a[start+k+1])
+    ans = "".join(store_time)
+    print(ans)
+    
+    store_tran = []
+    for i in range(len(a)):
+        if "▎鄰近地標或大眾運輸：" == a[i]:
+            start = i
+        if "▎社團內參考食記：" == a[i]:
+            end = i
+    l = int(end - start)-1
+    for k in range(l):
+        store_tran.append(a[start+k+1])
+    ans = "".join(store_tran)
+    print(ans)
+    
+    store_refs = []
+    for i in range(len(a)):
+        if "▎社團內參考食記：" == a[i]:
+            start = i
+        if "▎標籤：" == a[i]:
+            end = i
+    l = int(end - start)-1
+    for k in range(l):
+        store_refs.append(a[start+k+1])
+    ans = "".join(store_refs)
+    print(ans)
+    
+    store_tags = []
+    for i in range(len(a)):
+        if "▎標籤：" == a[i]:
+            start = i
+        if a[-1] == a[i]:
+            end = i
+    l = int(end - start)
+    for k in range(l):
+        store_tags.append(a[start+k+1])
+    ans = "".join(store_tags)
+    print(ans)
 store_name.append(s1[0].text)
 time.sleep(0.5)
 driver.find_element_by_xpath("//div[3]/div/div/span/span/span").click()
