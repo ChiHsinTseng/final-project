@@ -32,7 +32,9 @@ for items in range(167):
     print(s1[0].text)
     s = s1[1].text.split("\n")
     a = list(filter(None, s))
-    print(a)
+    for i in a:
+        i > a[0] and i < a[2]
+        print(i)
     store_name.append(s1[0].text)
     time.sleep(0.5)
     driver.find_element_by_xpath("//div[3]/div/div/span/span/span").click()
@@ -52,7 +54,9 @@ for items in range(47):
     print(s1[0].text)
     s = s1[1].text.split("\n")
     a = list(filter(None, s))
-    print(a)
+    for i in a:
+        i > a[0] and i < a[2]
+        print(i)
     store_name.append(s1[0].text)
     time.sleep(0.5)
     driver.find_element_by_xpath("//div[3]/div/div/span/span/span").click()
@@ -72,7 +76,9 @@ for items in range(59):
     print(s1[0].text)
     s = s1[1].text.split("\n")
     a = list(filter(None, s))
-    print(a)
+    for i in a:
+        i > a[0] and i < a[2]
+        print(i)
     store_name.append(s1[0].text)
     time.sleep(0.5)
     driver.find_element_by_xpath("//div[3]/div/div/span/span/span").click()
@@ -93,7 +99,9 @@ for items in range(68):
     print(s1[0].text)
     s = s1[1].text.split("\n")
     a = list(filter(None, s))
-    print(a)
+    for i in a:
+        i > a[0] and i < a[2]
+        print(i)
     store_name.append(s1[0].text)
     time.sleep(0.5)
     driver.find_element_by_xpath("//div[3]/div/div/span/span/span").click()
@@ -114,7 +122,9 @@ for items in range(37):
     print(s1[0].text)
     s = s1[1].text.split("\n")
     a = list(filter(None, s))
-    print(a)
+    for i in a:
+        i > a[0] and i < a[2]
+        print(i)
     store_name.append(s1[0].text)
     time.sleep(0.5)
     driver.find_element_by_xpath("//div[3]/div/div/span/span/span").click()
@@ -135,7 +145,9 @@ for items in range(50):
     print(s1[0].text)
     s = s1[1].text.split("\n")
     a = list(filter(None, s))
-    print(a)
+    for i in a:
+        i > a[0] and i < a[2]
+        print(i)
     store_name.append(s1[0].text)
     time.sleep(0.5)
     driver.find_element_by_xpath("//div[3]/div/div/span/span/span").click()
@@ -156,7 +168,9 @@ for items in range(12):
     print(s1[0].text)
     s = s1[1].text.split("\n")
     a = list(filter(None, s))
-    print(a)
+    for i in a:
+        i > a[0] and i < a[2]
+        print(i)
     store_name.append(s1[0].text)
     time.sleep(0.5)
     driver.find_element_by_xpath("//div[3]/div/div/span/span/span").click()
@@ -171,7 +185,9 @@ s1 = WebDriverWait(driver, 15).until(EC.presence_of_all_elements_located((By.XPA
 print(s1[0].text)
 s = s1[1].text.split("\n")
 a = list(filter(None, s))
-print(a)
+for i in a:
+        i > a[0] and i < a[2]
+        print(i)
 store_name.append(s1[0].text)
 time.sleep(0.5)
 driver.find_element_by_xpath("//div[3]/div/div/span/span/span").click()
@@ -183,7 +199,9 @@ s1 = WebDriverWait(driver, 15).until(EC.presence_of_all_elements_located((By.XPA
 print(s1[0].text)
 s = s1[1].text.split("\n")
 a = list(filter(None, s))
-print(a)
+for i in a:
+        i > a[0] and i < a[2]
+        print(i)
 store_name.append(s1[0].text)
 time.sleep(0.5)
 driver.find_element_by_xpath("//div[3]/div/div/span/span/span").click()
